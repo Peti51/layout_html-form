@@ -11,7 +11,167 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <section>
+      <fieldset>
+        <legend>Personal information</legend>
+        <form action="/action_page.php" method="get">
+          <div>
+            <label for="Surname"> Surname: </label>
+            <input type="text" name="Surename"
+              autocomplete="off" required
+              minlength="5" maxlength="13"
+            >
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="name"> Name: </label>
+            <input type="text" id="name"
+              name="name" autocomplete="off"
+              required
+            >
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="age"> How old are You? </label>
+            <input type="number" name="number"
+              min="1" max="100"
+              value="12" required
+            >
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="datOfBirth"> Full date of birth: </label>
+            <input type="date" spaceholder="mm/dd/yyyy"
+              name="datOfBirth" required
+            >
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="accepting"> I accept the term of the agreement </label>
+            <input type="checkbox" name="accepting"
+              required
+            >
+          </div>
+        </form>
+      </fieldset>
+    </section>
+    <div class="section">
+
+    </div>
+    <section>
+      <fieldset>
+        <legend>Registration</legend>
+        <form action="/action_page.php" method="get">
+          <div>
+            <label for="email"> E-mail: </label>
+            <input type="email" placeholder="email@example.com"
+              name="email"
+            >
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+          </div>
+        </form>
+      </fieldset>
+    </section>
+    <div class="section">
+
+    </div>
+    <section>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <form action="/action_page.php" method="get">
+          <div>
+            Do You love cats?
+            <input type="radio" name="cat">
+            <label for="yes"> Yes </label>
+            <input type="radio" name="cat">
+            <label for="no"> No </label>
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="color"> What is your favorite color? </label>
+            <input type="color">
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="bedTime"> What time do you go to bed? </label>
+            <input type="time" autocomplete="off">
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="cars"> What are your favorite brand of car?</label>
+            <select name="cars" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="ratio"> How do you rate our work? </label>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+            >
+          </div>
+        </form>
+      </fieldset>
+    </section>
+    <div class="section">
+
+    </div>
+    <section>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <form action="/action_page.php" method="get">
+          <div>
+            <label for="message"> Comments </label>
+            <textarea name="message"> </textarea>
+          </div>
+          <div class="elem">
+
+          </div>
+          <div>
+            <label for="recomendation"> Would you recomend us? </label>
+            <select name="recomendation">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </form>
+      </fieldset>
+    </section>
+    <div class="section"></div>
+    <section>
+      <form action="http://C:\projects\layout_html-form\backstop_data\bitmaps_reference\Form-4.png" method="get">
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </section>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
