@@ -1,9 +1,14 @@
 /* styles go here */
-
-.elem {
-  height: 10px;
+.field {
+  display: block;
+  margin-top: 20px;
 }
 
-.section {
-  height: 20px;
+.elem {
+  display: block;
+  margin-top: 10px;
+}
+
+.elems {
+  display: block;
 }

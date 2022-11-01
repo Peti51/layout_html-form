@@ -11,167 +11,133 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <section>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get">
       <fieldset>
         <legend>Personal information</legend>
-        <form action="/action_page.php" method="get">
-          <div>
-            <label for="Surname"> Surname: </label>
-            <input type="text" name="Surename"
-              autocomplete="off" required
-              minlength="5" maxlength="13"
-            >
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="name"> Name: </label>
-            <input type="text" id="name"
-              name="name" autocomplete="off"
-              required
-            >
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="age"> How old are You? </label>
-            <input type="number" name="number"
-              min="1" max="100"
-              value="12" required
-            >
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="datOfBirth"> Full date of birth: </label>
-            <input type="date" spaceholder="mm/dd/yyyy"
-              name="datOfBirth" required
-            >
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="accepting"> I accept the term of the agreement </label>
-            <input type="checkbox" name="accepting"
-              required
-            >
-          </div>
-        </form>
+        <label for="Surname" class="elem"> Surname:
+          <input
+            type="text"
+            name="Surename"
+            autocomplete="off"
+            required
+            minlength="5"
+            maxlength="13"
+          >
+        </label>
+        <label for="name" > Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+            required
+          >
+        </label>
+        <label for="age" class="elem"> How old are You?
+          <input
+            type="number"
+            name="number"
+            min="1"
+            max="100"
+            value="12"
+            required
+          >
+        </label>
+        <label for="datOfBirth" class="elem"> Full date of birth:
+          <input
+            type="date"
+            spaceholder="mm/dd/yyyy"
+            name="datOfBirth"
+            required
+          >
+        </label>
+        <label for="accepting" class="elem"> I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="accepting"
+            required
+          >
+        </label>
       </fieldset>
-    </section>
-    <div class="section">
-
-    </div>
-    <section>
-      <fieldset>
+      <fieldset class="field">
         <legend>Registration</legend>
-        <form action="/action_page.php" method="get">
-          <div>
-            <label for="email"> E-mail: </label>
-            <input type="email" placeholder="email@example.com"
-              name="email"
-            >
-          </div>
-          <div class="elem">
+        <label for="email" class="elems"> E-mail:
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
 
-          </div>
-          <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password">
-          </div>
-        </form>
+          >
+        </label>
+        <label for="password" class="elem">Password:
+          <input
+            type="password"
+            name="password"
+          >
+        </label>
       </fieldset>
-    </section>
-    <div class="section">
-
-    </div>
-    <section>
-      <fieldset>
+      <fieldset class="field">
         <legend>An interesting fact about you!</legend>
-        <form action="/action_page.php" method="get">
-          <div>
-            Do You love cats?
-            <input type="radio" name="cat">
-            <label for="yes"> Yes </label>
-            <input type="radio" name="cat">
-            <label for="no"> No </label>
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="color"> What is your favorite color? </label>
-            <input type="color">
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="bedTime"> What time do you go to bed? </label>
-            <input type="time" autocomplete="off">
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="cars"> What are your favorite brand of car?</label>
-            <select name="cars" multiple>
-              <option value="BMW">BMW</option>
-              <option value="Audi">Audi</option>
-              <option value="Lada">Lada</option>
-            </select>
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="ratio"> How do you rate our work? </label>
+        <label for="cat">Do You love cats?
+          <input
+            type="radio"
+            name="cat"
+          >
+          <label for="yes"> Yes
             <input
-              type="range"
-              min="0"
-              max="100"
-              value="0"
+              type="radio"
+              name="cat"
             >
-          </div>
-        </form>
+          </label>
+          <label for="no"> No </label>
+        </label>
+        <label for="color" class="elem"> What is your favorite color?
+          <input type="color" >
+        </label>
+        <label for="bedTime" class="elem"> What time do you go to bed?
+          <input
+            type="time"
+            autocomplete="off"
+          >
+        </label>
+        <label for="cars" class="elem"> What are your favorite brand of car?
+          <select
+            name="cars"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label for="ratio" class="elem"> How do you rate our work?
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+          >
+        </label>
       </fieldset>
-    </section>
-    <div class="section">
-
-    </div>
-    <section>
-      <fieldset>
+      <fieldset class="field">
         <legend>Additional info:</legend>
-        <form action="/action_page.php" method="get">
-          <div>
-            <label for="message"> Comments </label>
-            <textarea name="message"> </textarea>
-          </div>
-          <div class="elem">
-
-          </div>
-          <div>
-            <label for="recomendation"> Would you recomend us? </label>
-            <select name="recomendation">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-        </form>
+        <label for="message" class="elems"> Comments
+          <textarea name="message" > </textarea>
+        </label>
+        <label for="recomendation" class="elem"> Would you recomend us?
+          <select
+            name="recomendation"
+          >
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
       </fieldset>
-    </section>
-    <div class="section"></div>
-    <section>
-      <form action="http://C:\projects\layout_html-form\backstop_data\bitmaps_reference\Form-4.png" method="get">
-        <div>
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-    </section>
-    <script type="text/javascript" src="./main.js"></script>
+      <input
+        type="submit"
+        value="Submit"
+        class="elem"
+      >
+    </form>
   </body>
 </html>
